@@ -35,16 +35,16 @@ export default function(userlandApi = {}) {
     try {
       callback(null, global.prompt(message))
     } catch (err) {
-      const readline = require('readline')
-      const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout,
-      })
+      // const readline = require('readline')
+      // const rl = readline.createInterface({
+      //   input: process.stdin,
+      //   output: process.stdout,
+      // })
 
-      rl.question(message, answer => {
-        callback(null, answer)
-        rl.close()
-      })
+      // rl.question(message, answer => {
+      //   callback(null, answer)
+      //   rl.close()
+      // })
     }
   }
 
